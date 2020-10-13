@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cifraComCifraDeCesar( deslocamento, mensagem )
+        {
+        var numero = 0;
+        var mensagemEncriptada = "";
+        for(var i = 0; i < mensagem.length; i++) {
+            numero = mensagem[i].charCodeAt();
+            mensagemEncriptada += String.fromCharCode(numero + deslocamento);
+        }
+        return mensagemEncriptada;
+        }
+
+        function decifraCifraDeCesar( deslocamento, mensagemCifrada )
+        {
+        var numero = 0;
+        var mensagemDecifrada = "";
+        for (var i = 0; i < mensagemCifrada.length; i++){               
+                
+            numero = mensagemCifrada[i].charCodeAt(); 
+            mensagemDecifrada += String.fromCharCode(numero - deslocamento) 
+        }
+        return mensagemDecifrada;
+        }
+
+        console.log (cifraComCifraDeCesar(2, "AMAR"));
+        console.log (decifraCifraDeCesar(2, "COCT")); 
+    </script>
+
+    
+</body>
+</html>
