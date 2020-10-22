@@ -6,114 +6,14 @@
     <title>Não seja demitido</title>
 </head>
 <body>
-    <input type="button" value="JOGAR NOVAMENTE" onClick="document.location.reload(true)">
-    <script>
-        function executaJogo () {
-
-            var jogo = 0;
-
-            while (jogo == 0) {
-            var inicio = prompt("Deseja jogar? Digite S ou N");
-            if (inicio == "S") {
-                alert("Você iniciou o jogo!")
-            } else if (inicio == "N") {
-                alert("Obrigado por jogar!")
-                break;
-            }
-            var fase1 = prompt("Seu objetivo é não ser demitido, escolha com base nos números.\nO que você gostaria de fazer assim que acorda?\n1 - Dormir mais 5 minutos.\n2 - Ficar sentado na cama olhando pro teto.\n3 - Se arrumar para ir ao trabalho.")
-            if (fase1 == 1 || fase1 == 2) {
-                alert("Você perdeu o horário e foi demitido!")
-                break;
-            } else if (fase1 == 3) {
-
-            } else {
-                break;
-            }
-            var fase2 = prompt("Você sai de casa após ouvir no noticiário que o trânsito não estaria bom na parte da cidade onde você mora. O que você faz?\n1 - Insistir e ir de carro mesmo assim.\n2 - Ir de ônibus.\n3 - Ir de metrô.")
-            if (fase2 == 1 || fase2 == 2) {
-                alert ("Você ficou preso no trânsito, seu chefe não entendeu legal e você foi demitido!")
-                break;
-            } else if (fase2 == 3) {
-
-            } else {
-                break;
-            }
-            var fase3 = prompt("Você chega no trabalho e só existem duas mesas disponíveis para você trabalhar. Onde você senta?\n1 - Na mesa ao fundo, longe dos meus colegas que eu tenho mais contato.\n2 - Na mesa perto dos meus colegas.")
-            if (fase3 == 2) {
-                alert("Você ficou conversando a manhã toda, seu chefe viu que você não fez nada e você foi demitido!")
-                break;
-            } else if (fase3 == 1) {
-
-            } else {
-                break;
-            }
-            var fase4 = prompt("Hora do almoço! Mas você está cheio de tarefas. O que você faz?\n1 - Sai para almoçar mesmo assim.\n2 - Pula o almoço pra fazer as tarefas.")
-            if (fase4 == 2) {
-                alert("Você ficou com fome, não conseguiu trabalhar e entregar as tarefas e foi demitido!")
-                break;
-            } else if (fase4 == 1) {
-
-            } else {
-                break;
-            }
-            var fase5 = prompt("Voltando do almoço, você percebe que tem 30 minutos para entregar as tarefas.\n1 - Corro pra fazer tudo\n2 - Converso com o chefe pra aumentar o prazo.\n3 - Peço ajuda.")
-            if (fase5 == 2) {
-                alert("Seu chefe se irritou com o seu pedido e você foi demitido!")
-                break;
-            } else if (fase5 == 3 || fase5 == 1 ) {
-
-            } else {
-                break;
-            }
-            var fase6 = prompt("Ufa! Você conseguiu entregar as tarefas antes do prazo. Porém seu amigo não, e ainda faltam cinco minutos. O que você faz?\n1 - Deixo ele se virar.\n2 - Ajudo.\n3 - Faço tudo por ele.")
-            if (fase6 == 1) {
-                alert("Seu chefe perguntou ao seu amigo por que ele não pediu ajuda para terminar, e seu amigo respondeu que pediu ajuda pra você e você não quis ajudar. Você foi demitido por não trabalhar em equipe!")
-                break;
-            } else if (fase6 == 3) {
-                alert("Seu chefe percebe que você fez o trabalho todo por ele. Seu amigo é demitido, mas você não. Apesar de você ficar com remorso, o jogo segue.")
-            } else if (fase6 == 2) {
-
-            } else {
-                break;
-            }
-            var fase7 = prompt("Hora de ir pra casa! Só que não. Seu chefe te pede pra ficar depois do horário fazendo mais algumas tarefas.\n1 - Engulo a vontade de falar besteiras e vou ao trabalho.\n2 - Pergunto se não posso fazer outro dia.\n3 - Não estou nem aí, vou pra casa.")
-            if (fase7 == 2) {
-                alert("Seu chefe não está num bom dia hoje, você foi demitido por tentar prolongar o prazo!")
-                break;
-            } else if (fase7 == 3) {
-                alert("Você foi demitido por não obedecer ao chefe!")
-                break;
-            } else if (fase7 == 1) {
-
-            } else {
-                break;
-            }
-            var fase8 = prompt("Depois de finalmente terminar o trabalho todo, você está livre pra ir pra casa. Ainda é terça-feira, mas te convidam pra uma festa depois do trabalho. Você vai?\n1 - Vou e bebo 15 catuabas.\n2 - Não vou.\n3 - Vou e me divirto com moderação.")
-            if (fase8 == 1) {
-                alert("Você bebe tanto que quando vai pra casa dorme demais e não consegue acordar pra trabalhar. Você foi demitido!")
-                break;
-            } else if (fase8 == 2) {
-                alert("Você não tira um momento de lazer pra si mesmo, fica extremamente irritado no dia seguinte e acaba fazendo coisas que não devia na empresa. Você foi demitido!")
-                break;
-            } else if (fase8 == 3) {
-
-            } else {
-                break;
-            }
-            var fase9 = prompt("Depois da festa, você chega em casa, janta e se prepara pra dormir. Porém, aquele joguinho online que você tanto ama está praticamente lhe chamando.\n1 - Passo a madrugada jogando.\n2 - Jogo um pouquinho.\n3 - Vou dormir.")
-            if (fase9 == 1 || fase9 == 2) {
-                alert("Você já teve seu momento de diversão, jogar agora é procrastinar! Você não dormiu direito e foi demitido por não trabalhar corretamente no dia seguinte!")
-                break;
-            } else if (fase9 == 3) {
-
-            } else {
-                break;
-            }
-            alert("Parabéns! Você não foi demitido. Ainda. ;)")
-            }
-        }
-
-        executaJogo();
+    <h1>Não seja demitido!</h1>
+    <h2 class="parte-jogo">Início</h2>
+    <span class="descricao">Seja bem-vindo ao jogo "Não seja demitido!", aqui seu objetivo é simples: não ser demitido. Deseja jogar?</span>
+    <div>
+        <button class="opcao1">Sim</button>
+        <button class="opcao2">Não</button>
+    </div>
+    <script src="jsjogo.js">
 
     </script>
 
