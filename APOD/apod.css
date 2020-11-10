@@ -1,0 +1,23 @@
+#fotoApod {
+    width: 350px;
+    border-radius: 50%;
+}
+
+#caixaEmVolta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dataApod {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#tituloApod {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#descricaoApod {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}

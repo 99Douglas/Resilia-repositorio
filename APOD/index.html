@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="apod.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="caixaEmVolta">
+        <img src="" id="fotoApod">
+        <span id="dataApod"></span>
+        <h1 id="tituloApod"></h1>
+        <h2 id="descricaoApod"></h2>
+        <input type="date" id="dataNovaApod">
+        <button id="botao">Buscar por outra Apod</button>
+    </div>
+
+    <script src="js/ApodController.js"></script>
+    <script src="js/ApodModel.js"></script>
+    <script src="js/ApodView.js"></script>
+    <script>
+        let apodPrincipal = new ApodController();
+
+        apodPrincipal.apod();
+
+    </script>
+</body>
+</html>
