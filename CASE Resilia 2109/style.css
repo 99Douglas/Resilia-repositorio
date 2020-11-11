@@ -1,0 +1,56 @@
+header {
+    background: #000000;
+    padding: 20px 0;
+}
+body {
+    background-color: #fcce03;
+    font-family: sans-serif;
+}
+.logo-resilia {
+    display: block;
+    margin: 20px auto;
+}
+.caixa {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background-color: #000000;
+    width: 600px;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 50px;
+}
+.inicial {
+    color: #fcce03;
+    font-size: 50px;
+}
+.descricao {
+    color: #fcce03;
+    font-size: 14px;
+}
+.formulario {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    background: #000000;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 50px;
+}
+.campos {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #fcce03;
+}
+.campos:hover {
+    font-size: 18px;
+}
+.botao {
+    background-color: #fcce03;
+    color: black;
+}
+.botao:hover {
+    background-color: black;
+    color: #fcce03;
+}
