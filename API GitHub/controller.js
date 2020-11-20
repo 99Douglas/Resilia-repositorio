@@ -14,6 +14,7 @@ class Controller {
             let controller = new Controller();
             controller.localizandoUsuario(usuario);
             controller.localizandoRepositorio(usuario);
+
         });
     };
 

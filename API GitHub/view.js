@@ -49,6 +49,11 @@ class View {
 
         }
 
+        let inputUsuario = document.getElementById('usuario');
+        inputUsuario.value = "";
+
+        inputUsuario.focus();
+
         
     }
 
