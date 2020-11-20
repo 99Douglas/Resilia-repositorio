@@ -5,28 +5,28 @@ class View {
 
         console.log('mostrando usuario')
 
-        let foto = document.createElement('img')
-        let nome = document.createElement('h2')
+        let foto = document.getElementById('foto')
+        let nome = document.getElementById('nome')
 
         foto.src = model.fotoUsuario
         nome.textContent = model.nomeUsuario
 
-        console.log(nome)
-
-        document.body.appendChild(foto);
-        document.body.appendChild(nome);
-
     }
 
     mostraRepositorio(model) {
+
+        let repo = document.getElementById('repositorios')
+
+        repo.innerText = "";
 
         console.log('mostrando repositorios')
 
         let repositorios = model.repositorios
 
         for(let repositorio of repositorios) {
+
         let repositoriosHTML = document.createElement('div');
-        repositoriosHTML.classList.add('repositorios');
+        repositoriosHTML.classList.add('repositorio');
 
         let linkRepositorio = document.createElement('a');
         linkRepositorio.classList.add('linkRepositorio');
@@ -43,7 +43,7 @@ class View {
         linguagemRepositorio.textContent = repositorio.language;
         repositoriosHTML.appendChild(linguagemRepositorio);
 
-        document.body.appendChild(repositoriosHTML);
+        repo.appendChild(repositoriosHTML);
 
         console.log(repositoriosHTML);
 
